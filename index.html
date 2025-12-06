@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Where in the world?</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- nav -->
+      <nav class="nav">
+        <div class="nav-container container">
+          <!-- logo -->
+          <a href="./index.html" class="logo">Where in the world?</a>
+          <!-- theme btn -->
+          <div class="theme">
+            <button id="theme-btn" class="btn">
+              <i class="bx bx-moon"></i>
+            </button>
+            <p class="theme-text">Dark Mode</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container">
+      <section class="filter-bar">
+        <div class="search-main">
+          <i class="bx bx-search-alt-2"></i>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a country…"
+          />
+        </div>
+
+        <select name="region" id="select-region">
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </section>
+
+      <!-- section country list -->
+      <section id="country-list"></section>
+
+      <!-- full information -->
+      <section id="full-information"></section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
