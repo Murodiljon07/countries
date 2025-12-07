@@ -47,3 +47,7 @@ SearchInput.addEventListener("input", () => {
   );
   addCountries(filterEd);
 });
+
+CountriesList.addEventListener("click", (e) => {
+  console.log(e);
+});
