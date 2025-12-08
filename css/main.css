@@ -57,6 +57,7 @@ a {
   color: var(--text-color);
 }
 .theme {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;

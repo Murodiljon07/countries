@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- box icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
     <title>Where in the world?</title>
   </head>
   <body>
@@ -22,12 +21,11 @@
           <!-- logo -->
           <a href="./index.html" class="logo">Where in the world?</a>
           <!-- theme btn -->
-          <div class="theme">
-            <button id="theme-btn" class="btn">
-              <i class="bx bx-moon"></i>
-            </button>
+
+          <button id="theme-btn" class="btn theme">
+            <i class="bx bx-moon"></i>
             <p class="theme-text">Dark Mode</p>
-          </div>
+          </button>
         </div>
       </nav>
     </header>
@@ -45,8 +43,9 @@
         </div>
 
         <select name="region" id="select-region">
+          <option value="Default">Filter by Region</option>
           <option value="Africa">Africa</option>
-          <option value="America">America</option>
+          <option value="Americas">America</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
           <option value="Oceania">Oceania</option>
@@ -99,6 +98,8 @@
         </div>
       </section>
     </main>
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/filter.js"></script>
+    <script type="module" src="./js/theme.js"></script>
   </body>
 </html>
