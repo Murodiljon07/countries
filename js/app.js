@@ -1,13 +1,14 @@
 import countries from "./date.js";
 
 const CountriesList = document.getElementById("country-list");
+const CountryBox = document.querySelectorAll(".country-box");
 
 /* add from data */
 
 export function addCountries(countries) {
   CountriesList.innerHTML = "";
   countries.map((curVel) => {
-    CountriesList.innerHTML += `<div class="country-box">
+    CountriesList.innerHTML += `<div class="country-box" data-id="${curVel.id}">
         <img src="${curVel.flag}" alt="Undefind" class="flag" />
         <div class="country-desc">
           <h2 class="country-name">${curVel.name}</h2>
