@@ -1,7 +1,6 @@
 import countries from "./date.js";
 
 const CountriesList = document.getElementById("country-list");
-const CountryBox = document.querySelectorAll(".country-box");
 
 /* add from data */
 
@@ -23,3 +22,11 @@ export function addCountries(countries) {
 }
 
 addCountries(countries);
+
+CountriesList.addEventListener("click", (e) => {
+  const CountryBox = e.target.closest(".country-box");
+
+  const boxId = CountryBox.dataset.id;
+
+  window.location.href = `./detail.html?id=${boxId}`;
+});

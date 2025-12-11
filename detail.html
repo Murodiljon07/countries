@@ -3,49 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/ful-information.css" />
     <title>Details</title>
   </head>
   <body>
-    <!-- full information -->
-    <section id="full-information">
-      <button id="return-btn"><-- Back</button>
-      <img src="./pictures/Germany.png" alt="" class="flag" />
-      <div class="information-desc">
-        <div class="main-info">
-          <h2 class="information-desc-title">Belgium</h2>
-          <p class="native key">
-            Native Name: <span class="value">België</span>
-          </p>
-          <p class="native key">
-            Population:<span class="value"> 11,319,511 </span>
-          </p>
-          <p class="native key">Region:<span class="value">Europe</span></p>
-          <p class="native key">
-            Sub Region:<span class="value">Western Europe</span>
-          </p>
-          <p class="native key">Capital:<span class="value">Brussels</span></p>
-        </div>
+    <!-- header -->
+    <header class="header">
+      <!-- nav -->
+      <nav class="nav">
+        <div class="nav-container container">
+          <!-- logo -->
+          <a href="./index.html" class="logo">Where in the world?</a>
+          <!-- theme btn -->
 
-        <div class="othes-info">
-          <p class="native key">
-            Top Level Domain:<span class="value">.be</span>
-          </p>
-          <p class="native key">Currencies:<span class="value">Euro</span></p>
-          <p class="native key">
-            Languages:<span class="value">Dutch, French, German</span>
-          </p>
+          <button id="theme-btn" class="btn theme">
+            <i class="bx bx-moon"></i>
+            <p class="theme-text">Dark Mode</p>
+          </button>
         </div>
+      </nav>
+    </header>
 
-        <div class="border-countries">
-          <h2 class="desc-title">Border Countries:</h2>
-          <div class="jump-countries-btns">
-            <button class="jup-to-countrie">France</button>
-            <button class="jup-to-countrie">Germany</button>
-            <button class="jup-to-countrie">Netherlands</button>
+    <!-- main -->
+    <main class="container">
+      <!-- full information -->
+      <section id="full-information">
+        <button id="return-btn"><-- Back</button>
+        <img src="./pictures/Germany.png" alt="" class="flag" />
+        <div class="information-desc">
+          <div class="main-info">
+            <h2 class="information-desc-title">Belgium</h2>
+            <p class="native key">
+              Native Name: <span class="value">België</span>
+            </p>
+            <p class="native key">
+              Population:<span class="value"> 11,319,511 </span>
+            </p>
+            <p class="native key">Region:<span class="value">Europe</span></p>
+            <p class="native key">
+              Sub Region:<span class="value">Western Europe</span>
+            </p>
+            <p class="native key">
+              Capital:<span class="value">Brussels</span>
+            </p>
+          </div>
+
+          <div class="othes-info">
+            <p class="native key">
+              Top Level Domain:<span class="value">.be</span>
+            </p>
+            <p class="native key">Currencies:<span class="value">Euro</span></p>
+            <p class="native key">
+              Languages:<span class="value">Dutch, French, German</span>
+            </p>
+          </div>
+
+          <div class="border-countries">
+            <h2 class="desc-title">Border Countries:</h2>
+            <div class="jump-countries-btns">
+              <button class="jup-to-countrie">France</button>
+              <button class="jup-to-countrie">Germany</button>
+              <button class="jup-to-countrie">Netherlands</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <script type="module" src="./js/detail.js"></script>
+    <script type="module" src="./js/theme.js"></script>
   </body>
 </html>
